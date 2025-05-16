@@ -1,0 +1,191 @@
+/* Elegant Menu Styling */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+body.elegant {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.elegant .menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.elegant .menu-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2rem;
+}
+
+.elegant .menu-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    margin: 0;
+    font-weight: 300;
+}
+
+.elegant .menu-header .subtitle {
+    font-style: italic;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2em;
+}
+
+.elegant .menu-section {
+    margin-bottom: 4rem;
+}
+
+.elegant .menu-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.elegant .menu-section h2 i {
+    display: none; /* Hide icons for more elegant look */
+}
+
+.elegant .menu-items {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.elegant .menu-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1.5rem;
+}
+
+.elegant .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.elegant .item-header h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.elegant .price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.elegant .description {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+.elegant .section-notes {
+    text-align: center;
+    font-style: italic;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.elegant .choice-options {
+    margin-top: 1rem;
+}
+
+.elegant .choice-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.elegant .choices {
+    padding-left: 1rem;
+}
+
+.elegant .choices p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.elegant .featured {
+    border: 1px solid #000;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.elegant .warning {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+.elegant .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    z-index: 100;
+}
+
+.elegant .bottom-nav .nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elegant .bottom-nav i {
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .elegant .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .elegant .menu-header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0.3em;
+    }
+    
+    .elegant .menu-container {
+        padding: 1rem;
+    }
+    
+    .elegant .bottom-nav .nav-item span {
+        display: none;
+    }
+} 
